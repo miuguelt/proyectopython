@@ -1,3 +1,42 @@
+body {
+    margin:0;
+    padding:0;
+    border:0;           
+    width:100%;
+    background:#F0F0F0;  
+    min-width:600px; /* Mínimo de ancho. Si no es necesario puede ser eliminado */
+                     /* Esta propiedad no funciona en versiones viejas de Internet Explorer */
+    font-size:90%;
+    font-family: Arial,?FreeSans,?Helvetica,?sans-serif;
+    
+}
+ 
+/* Estilo para el encabezado */
+.encabezado {
+    clear:both;
+    float:left;
+    width:99%;   /* Queremos que vaya de un lado al otro de la plantilla */
+    padding: 5px;
+}
+.envoltura {
+    position:relative;  /* Esto arregla un bug en IE7 */
+    clear:both;
+    float:left;
+    width:100%;         /* el ancho de toda la página */
+    overflow:hidden;        
+}
+
+.pie {
+    clear:both;
+    float:left;
+    width:99%;
+    padding: 5px;
+}
+
+#direccion{
+    text-align: center;
+}
+
 p {
     border: solid 2px;
     border-color: blue;
