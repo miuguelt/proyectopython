@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="miestilo.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='miestilo.css') }}">
 </head>
-<body>
+<body style="display: block;">
     <strong>
         <h1 class="colordefondo" style="text-align:center;">Hoja de vida Miguel Ángel Tejedor Mendoza</h1>
     </strong>   
     <p>
         Ingeniero de Sistemas, creativo, hábil y de gran capacidad para aprender, con criterio para asumir el conocimiento y la técnica. Poseo gran capacidad de adaptabilidad, trabajo bajo presión y en equipo. Actualmente  estoy iniciando mi proyecto de grado con el Grupo de investigación SIMON. Mi objetivo en la vida es aportar a la sociedad herramientas útiles que permitan desarrollo integral de todo ser humano.
     </p>
-    <div class="center">
-        <img src="{{ url_for('static', filename='foto.jpg') }}" alt="" class="center"> <br>
-        <a class="center" style="text-align: center;" href="https://www.linkedin.com/in/miguel-angel-tejedor-mendoza-6695b91a6/">Perfil en linkedin</a> <br> <br>
+    <div class="center" >
+        
+            <img style="position: relative;" id="imagen" src="{{ url_for('static', filename='foto.jpg') }}" alt="" class="center"> <br>
+      
+            <a class="center" style="text-align: center;" href="https://www.linkedin.com/in/miguel-angel-tejedor-mendoza-6695b91a6/">Perfil en linkedin</a> <br> <br>          
     </div>
     
     <strong>
@@ -97,5 +99,6 @@ Sexo                                                       Masculino <br>
           <td>Ingeniero de Sistemas</td>
         </tr>
       </table>
+      <script src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
 </html>
