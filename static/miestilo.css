@@ -4,25 +4,23 @@ body {
     border:0;           
     width:100%;
     background:#F0F0F0;  
-    min-width:600px; /* Mínimo de ancho. Si no es necesario puede ser eliminado */
-                     /* Esta propiedad no funciona en versiones viejas de Internet Explorer */
+    min-width:600px; 
     font-size:90%;
-    font-family: Arial,?FreeSans,?Helvetica,?sans-serif;
-    
+    font-family: Helvetica;
 }
- 
-/* Estilo para el encabezado */
+
 .encabezado {
     clear:both;
     float:left;
-    width:99%;   /* Queremos que vaya de un lado al otro de la plantilla */
+    width:99%;
     padding: 5px;
 }
+
 .envoltura {
-    position:relative;  /* Esto arregla un bug en IE7 */
+    position:relative;
     clear:both;
     float:left;
-    width:100%;         /* el ancho de toda la página */
+    width:100%;
     overflow:hidden;        
 }
 

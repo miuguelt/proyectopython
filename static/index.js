@@ -1,7 +1,4 @@
-
-
 let cat = document.getElementById("imagen"); 
-console.log(cat);
 let angle = Math.PI / 2;
 
 function animate(time, lastTime) {
