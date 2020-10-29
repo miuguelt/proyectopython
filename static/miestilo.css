@@ -49,6 +49,7 @@ p {
 }
 
 .colordefondo{
+    background: coral;
     color: black;
 }
 
@@ -58,7 +59,6 @@ p {
     margin-right: auto;   
 }
 
-.titulo{
     background-color: burlywood;
     display: flex;
     align-items: center;
@@ -93,5 +93,5 @@ p {
 #button li a:hover {
     background-color: #2586d7;
     margin-top: -2;
-    padding-bottom: 12px;]
+    padding-bottom: 12px;
 }
