@@ -7,6 +7,14 @@ body {
     min-width:600px; 
     font-size:90%;
     font-family: Helvetica;
+    display: flex;
+}
+
+.contenedorp {
+    margin: auto; 
+    width: 80%; 
+    background: rgba(118, 147, 236, 0.151); 
+    position: relative;
 }
 
 .encabezado {
@@ -41,13 +49,49 @@ p {
 }
 
 .colordefondo{
-    background-color: coral;
-    background: coral;
-    color: darkred;
+    color: black;
 }
 
 .center {
-    display: block;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;   
+}
+
+.titulo{
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.titulo span{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 15px;
+}
+
+#button {
+    padding: 0;
+}
+
+#button li {
+    display: inline;
+}
+
+#button li a {
+    font-family: Arial;
+    font-size: 11px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: #2175bc;
+    color: #fff;
+}
+
+#button li a:hover {
+    background-color: #2586d7;
+    margin-top: -2;
+    padding-bottom: 12px;]
 }

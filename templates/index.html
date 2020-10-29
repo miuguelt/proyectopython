@@ -8,12 +8,22 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='miestilo.css') }}">
 </head>
 <body>
-    <div style="margin: auto; width: 80%; background: royalblue;">
+    <div class='contenedorp'>
         <div class='encabezado'>
             <strong>
-                <h1 class="colordefondo" style="text-align:center;">Hoja de vida Miguel Ángel Tejedor Mendoza</h1>
+                <h1 class='colordefondo' style='text-align:center;'>Hoja de vida Miguel Ángel Tejedor Mendoza</h1>
             </strong>
         </div>
+        <div>
+            <ul id='button'>
+                <li><a href='#estudios'>    Titulo</a></li>
+                <li><a href='#personal'>Información personal</a></li>
+                <li><a href='#estudios'>Estudios</a></li>
+                <li><a href='#experiencia'>Experiencia</a></li>
+                <li><a href='#contacto'>Contacto</a></li>
+            </ul>
+        </div>
+
         <div class='envoltura'>
             <div class='col1'>
                 <p>
@@ -23,19 +33,19 @@
                     objetivo en la vida es aportar a la sociedad herramientas útiles que permitan desarrollo integral de
                     todo ser humano.
                 </p>
-                <div class="center">
+                <div class='center'>
 
-                    <img style="position: relative;" id="imagen" src="{{ url_for('static', filename='foto.jpg') }}"
-                        alt="" class="center"> <br>
+                    <img style='position: relative;'' id='imagen' src="{{ url_for('static', filename='foto.jpg') }}"
+                        alt="" class='center'> <br>
 
-                    <a class="center" style="text-align: center;"
+                    <a class='center' style='text-align: center;'
                         href="https://www.linkedin.com/in/miguel-angel-tejedor-mendoza-6695b91a6/">Perfil en
                         linkedin</a> <br> <br>
                 </div>
 
-                <strong>
-                    <em> Información personal</em>
-                </strong>
+                <div class='titulo' id="personal">
+                    <span>Información personal</span>
+                </div>
 
                 <p>
                     Nombre(s) / Apellido(s) Miguel Ángel/ Tejedor Mendoza <br>
@@ -50,18 +60,19 @@
                     Sexo Masculino <br>
 
                 </p> <br>
-                <strong>
-                    <em> Estudios</em>
-                </strong>
+
+                <div class='titulo' id="estudios">
+                    <span>Estudios</span>
+                </div>
 
                 <p>
                     Secundaria: Colegio Integrado Antonio Ricaurte  <br>
                     Universidad: UIS <br>
                 </p> <br>
 
-                <strong>
-                    <em> Formación Complementaria</em>
-                </strong>
+                <div class='titulo' id="complementaria">
+                    <span>Formación Complementaria</span>
+                </div>
 
                 <p>
                     ORIENTACION DE LA FORMACION PROFESIONAL <br>
@@ -69,7 +80,7 @@
                     APLICACION DE HERRAMIENTAS METODOLOGICAS EN INVESTIGACION: PROCESOS DE CIENCIA, TECNOLOGÍA E INNOVACION <br>
                     INTEGRACION DE HERRAMIENTAS TECNOLOGICAS EN LA ENSEÑANZA Y APRENDIZAJE </u><br>
                 </p> <br>
-                <table>
+                <table id="experiencia">
                     <tr>
                         <th>Cargos</td>
                         <th>Entidad</td>
@@ -107,35 +118,11 @@
 
 
                 </table>
-                <table>
-                    <tr></tr>
-                    <tr></tr>
-                </table>
-                <table style="border:black 5px solid;" border="1">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Edad</th>
-                        <th>Dirección</th>
-                        <th>Profesión</th>
-                    </tr>
-                    <tr>
-                        <td>Miguel</td>
-                        <td>27</td>
-                        <td>America India</td>
-                        <td>Ingeniero de Sistemas</td>
-                    </tr>
-                    <tr>
-                        <td>Miguel</td>
-                        <td>27</td>
-                        <td>America India</td>
-                        <td>Ingeniero de Sistemas</td>
-                    </tr>
-                </table>
             </div>
         </div>
 
-        <div class='pie'>
-            <p id="direccion" style="text-align: center;">Calle 6A #7A-03 America India<span>Vélez</span> Celular: <span>3115667637</span></p>
+        <div class='pie' id="contacto">
+            <p id='direccion' style='text-align: center;'>Calle 6A #7A-03 America India<span>Vélez</span> Celular: <span>3115667637</span></p>
         </div>
     </div>
     <script src="{{ url_for('static', filename='index.js') }}"></script>
