@@ -59,6 +59,7 @@ p {
     margin-right: auto;   
 }
 
+.titulo {
     background-color: burlywood;
     display: flex;
     align-items: center;
