@@ -49,6 +49,7 @@ p {
 }
 
 .colordefondo{
+    background: coral;
     color: black;
 }
 
@@ -95,3 +96,4 @@ p {
     margin-top: -2;
     padding-bottom: 12px;
 }
+
